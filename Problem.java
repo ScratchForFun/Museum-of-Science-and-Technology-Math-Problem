@@ -5,6 +5,7 @@ public class Problem {
 
     public static void main(String[] args) {
         int waysToWin = 0;
+        long startTime = System.currentTimeMillis();
 
         for (int a1 = 0; a1 < 10; a1++) {
             for (int a2 = 0; a2 < 10; a2++) {
@@ -43,6 +44,7 @@ public class Problem {
         }
 
         System.out.println("There are " + waysToWin + " ways to solve this problem!");
+        System.out.println("This took " + (System.currentTimeMillis() - startTime) + "ms!");
     }
 
 }
